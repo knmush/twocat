@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=520">
+    <meta name="viewport" content="width-device-width">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>responsive web design</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+      <div class="container"></div>
+       <nav>
+           <h1>ロゴ</h1>
+           <ul>
+                <li><a href="＃menuA">メニューA</a></li>
+                <li><a href="＃menuB">メニューB</a></li>
+                <li><a href="＃menuC">メニューC</a></li>
+           </ul>
+          
+           <div class="menu">
+             <div class="hamburger" id="btn-open">
+               <span></span>
+               <span></span>
+               <span></span>
+             </div>
+           </div>
+       </nav>
+       <ul id="toggle-nav">
+          <li>メニューA</li>
+          <li>メニューB</li>
+          <li>メニューC</li>
+       </ul>
+       <header class="b-img">
+         <section>
+           <span class="s-title">タイトル</span>
+           <p>説明</p>
+         </section>
+       </header>
+       <section class="second">
+         <img src="image/IMG_44202.JPG">
+         <img src="image/IMG_44202.JPG">
+         <img src="image/IMG_44202.JPG">
+       </section>
+       <div class="third">
+         <header class="h-title">タイトル</header>
+          <section class="row">
+           <div class="img">
+             <img src="image/IMG_3044.JPG">
+           </div>
+           <div class="title">
+             <h2>タイトル</h2>
+             <ul>
+               <li>テキスト</li>
+               <li>テキスト</li>
+               <li>テキスト</li>
+               <li>テキスト</li>
+             </ul>
+           </div>
+          </section>
+          <section class="row">
+              <div class="img">
+                <img src="image/IMG_3438.JPG">
+              </div>
+              <div class="title">
+                <h2>タイトル</h2>
+                <ul>
+                  <li>テキスト</li>
+                  <li>テキスト</li>
+                  <li>テキスト</li>
+                  <li>テキスト</li>
+                </ul>
+              </div>
+             </section>
+          <section class="row">
+            <div class="img">
+              <img src="image/IMG_3427.JPG">
+            </div>
+            <div class="title">
+              <h4>タイトル</h4>
+              <ul>
+                  <li>テキスト</li>
+                  <li>テキスト</li>
+                  <li>テキスト</li>
+                  <li>テキスト</li>
+                </ul> 
+            </div>
+          </section>
+       </div>
+       <div class="fourth">
+         <header class="f-title">タイトル</header>
+         <div class="image">
+           <div class="f-img"><img src="image/IMG_3441.jpg"></div>
+           <div class="f-img"><img src="image/IMG_3441.jpg"></div>
+           <div class="f-img"><img src="image/IMG_3441.jpg"></div>
+           <div class="f-img"><img src="image/IMG_3441.jpg"></div>
+           <div class="f-img"><img src="image/IMG_3441.jpg"></div>
+           <div class="f-img"><img src="image/IMG_3441.jpg"></div>
+           <div class="f-img"><img src="image/IMG_3441.jpg"></div>
+           <div class="f-img"><img src="image/IMG_3441.jpg"></div>
+        </div>
+       </div> 
+
+       <style>
+          #toggle-nav{
+           height: 0;
+           transition: .3s;
+           overflow: hidden;
+           background-color: #2d9281;
+          }
+          #toggle-nav.open{
+           height: 150px;
+           border: 1px solid white;
+           border-top: none;
+          }
+        </style>    
+
+
+
+      <script>
+         $(function () {
+            $("#btn-open").on('click', function () {
+               $("#toggle-nav").toggleClass("open");
+            })
+          })
+       </script>
+  </body>
+</html>    
